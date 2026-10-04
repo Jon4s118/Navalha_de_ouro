@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Navalha de Ouro — barbearia em Sorriso/MT. Corte, barba e acabamento. Agende pelo WhatsApp.">
+  <title>Navalha de Ouro — Barbearia</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header class="topo">
+    <span class="logo">✂️ Navalha de Ouro</span>
+    <a href="#agendar" class="btn-topo">Agendar</a>
+  </header>
+
+  <section class="hero">
+    <p class="hero-tag">Barbearia · Sorriso/MT</p>
+    <h1>Seu corte, <em>no seu horário</em>.</h1>
+    <p>Corte, barba e acabamento sem fila de espera. Escolha o serviço, o horário e confirme pelo WhatsApp.</p>
+    <a href="#agendar" class="btn">Agendar meu horário</a>
+  </section>
+
+  <main class="container">
+
+    <!-- Serviços -->
+    <h2 class="titulo-secao">Serviços</h2>
+    <div class="grade">
+      <div class="servico">
+        <h3>Corte degradê</h3>
+        <p>Máquina, tesoura e finalização</p>
+        <span class="preco">R$ 35</span>
+      </div>
+      <div class="servico">
+        <h3>Barba completa</h3>
+        <p>Toalha quente e navalha</p>
+        <span class="preco">R$ 25</span>
+      </div>
+      <div class="servico">
+        <h3>Corte + barba</h3>
+        <p>Pacote completo com desconto</p>
+        <span class="preco">R$ 50</span>
+      </div>
+      <div class="servico">
+        <h3>Pezinho / acabamento</h3>
+        <p>Retoque entre cortes</p>
+        <span class="preco">R$ 15</span>
+      </div>
+    </div>
+
+    <!-- Agendamento -->
+    <section class="agendar" id="agendar">
+      <h2>Agende seu horário</h2>
+      <form id="form-agendamento">
+        <label>Nome
+          <input type="text" id="nome" required placeholder="Seu nome">
+        </label>
+        <label>Serviço
+          <select id="servico">
+            <option>Corte degradê — R$ 35</option>
+            <option>Barba completa — R$ 25</option>
+            <option>Corte + barba — R$ 50</option>
+            <option>Pezinho / acabamento — R$ 15</option>
+          </select>
+        </label>
+        <div class="linha">
+          <label>Data
+            <input type="date" id="data" required>
+          </label>
+          <label>Horário
+            <select id="hora">
+              <option>09:00</option><option>10:00</option>
+              <option>11:00</option><option>14:00</option>
+              <option>15:00</option><option>16:00</option>
+              <option>17:00</option><option>18:00</option>
+            </select>
+          </label>
+        </div>
+        <button type="submit" class="btn btn-whats">Confirmar no WhatsApp</button>
+      </form>
+    </section>
+
+  </main>
+
+  <footer class="rodape">
+    <p>Navalha de Ouro · Rua Exemplo, 456 — Sorriso/MT · (66) 99999-9999</p>
+    <p>Seg a Sáb · 09h às 18h</p>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
